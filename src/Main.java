@@ -40,6 +40,7 @@ public class Main {
         return contents;
 
     }
+    
     public static void main(String[] args) {
 	// write your code here
     }
