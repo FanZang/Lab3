@@ -40,8 +40,18 @@ public class Main {
         return contents;
 
     }
-    
+    static int count(final String a) {
+        int b = 0;
+        for (int i = 0; i < a.length(); i++) {
+            if (a.substring(i,i + 5).equals("Prince")) {
+                b++;
+            }
+        }
+        return b;
+    }
+
     public static void main(String[] args) {
-	// write your code here
+        String a = urlToString("http://erdani.com/tdpl/hamlet.txt");
+        System.out.print(count(a));
     }
 }
